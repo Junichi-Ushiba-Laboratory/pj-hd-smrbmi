@@ -116,5 +116,14 @@ classdef Analysis_BMIDB < fileIO_BMIDB
         end
     end
     
-    
+    methods (Access = public)
+        function [IAF,IBF] = get_IAF(self)            
+            mode1 = @(x) mode(x,1);
+            IAFIBF = cellfun(mode1,self.result_EEG.IAF,'UniformOutput',false);
+            IAFIBF = cat(1,IAFIBF{:});
+            IAFIBF = mode(IAFIBF,1);
+            IAF = IAFIBF(1);
+            IBF = IAFIBF(2);
+        end
+    end
 end
