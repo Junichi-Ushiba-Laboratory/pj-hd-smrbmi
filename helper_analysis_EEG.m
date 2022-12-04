@@ -1,4 +1,43 @@
 classdef helper_analysis_EEG
+    
+    methods (Static)
+        function time_win = get_time_win(num_DB)
+            if num_DB == 1
+                time_win = [6 7]; %rest task
+            elseif num_DB == 2
+                time_win = [8 7]; %rest task
+            elseif num_DB == 3
+                time_win = [7 6]; %rest task
+            end
+        end
+        
+        function idx_ses = get_idx_ses(num_DB)
+            if num_DB == 1
+                idx_ses = 'all';
+            elseif num_DB == 2
+                idx_ses = 'all';
+            elseif num_DB == 3
+                idx_ses = 1:6:20;
+            end
+        end
+        
+        function ERSP_ses = get_ERSP_ses(ERSP_ses,config_preproc,type)
+            if nargin < 3
+                type = 1;
+            end
+            if ischar(config_preproc.idx_ses)
+                ERSP_ses = ERSP_ses;
+            elseif isempty(ERSP_ses)
+                ERSP_ses = [];
+            else
+               if type == 1 
+                   ERSP_ses = ERSP_ses(:,:,config_preproc.idx_ses);
+               elseif type == 2
+                   ERSP_ses = ERSP_ses(:,config_preproc.idx_ses);
+               end
+            end
+        end
+    end
 
     methods (Static)
         function [eeg,sz_pad] = padEEG(eeg,Fs,sz_win)
