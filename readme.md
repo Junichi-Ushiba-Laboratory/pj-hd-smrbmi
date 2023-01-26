@@ -4,6 +4,10 @@
 https://openneuro.org/datasets/ds004444/versions/1.0.0
 ## Dataset 2
 https://openneuro.org/datasets/ds004446/versions/1.0.0
+## Dataset 3
+https://openneuro.org/datasets/ds004447/versions/1.0.0
+## Dataset 4
+https://openneuro.org/datasets/ds004448/versions/1.0.0
 
 ## environment <br>
     Mac OSX
