@@ -9,8 +9,10 @@ else
 end
 
 is_wholehead = 1;
-num_DB = 3;
-sub_load = NaN;%[1:2];
+num_DB = 1;
+sub_load = 1;
+%set [1:2] if you want to load sub1-2; 
+%set NaN if you want to load all subjects
 fs_ds = 200; %downsample
 path_DB_parent='path_2_data';
 path_DB = fullfile(path_DB_parent,sprintf('SMRBMI_HDEEG_%d',num_DB));
