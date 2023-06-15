@@ -1,5 +1,6 @@
 %% Demo code for analysis of EEGDB
 addpath('local/')
+addpath('./subsrc')
 global iseeglabdeployed_
 if isempty(iseeglabdeployed_)
     eeglab;
