@@ -18,4 +18,5 @@ elseif i_vis == 2
 elseif i_vis == 3
     vb.Topo(AB,config_preproc);
 end
+drawnow;
 end
