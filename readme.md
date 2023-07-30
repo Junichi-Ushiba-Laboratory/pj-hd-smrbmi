@@ -5,13 +5,13 @@ Iwama, S., Morishige, M., Kodama, M. et al. High-density scalp electroencephalog
 
 
 ## Dataset 1
-https://openneuro.org/datasets/ds004444/versions/1.0.0
+https://openneuro.org/datasets/ds004444/versions/1.0.1
 ## Dataset 2
-https://openneuro.org/datasets/ds004446/versions/1.0.0
+https://openneuro.org/datasets/ds004446/versions/1.0.1
 ## Dataset 3
-https://openneuro.org/datasets/ds004447/versions/1.0.0
+https://openneuro.org/datasets/ds004447/versions/1.0.1
 ## Dataset 4
-https://openneuro.org/datasets/ds004448/versions/1.0.0
+https://openneuro.org/datasets/ds004448/versions/1.0.1
 
 ## environment <br>
     Mac OSX
